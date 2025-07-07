@@ -68,8 +68,8 @@ def handle_task(index):
         multi_agents.run(task=prompt, max_feedback=MAX_FEEDBACK)
         
         try:
-            logger.info(f"Total Costs: ${multi_agents.get_total_cost:.2f}")
-            logger.info(f"Total Tokens: {multi_agents.get_total_tokens}")
+            logger.info(f"Total Costs: ${multi_agents.get_total_cost():.2f}")
+            logger.info(f"Total Tokens: {multi_agents.get_total_tokens()}")
         except Exception as e:
             logger.error(f"Error occurred while getting usage metrics: {e}")
     except Exception as e:
@@ -79,8 +79,8 @@ def handle_task(index):
         env = os.environ.copy()
         subprocess.run(["git", "add", "."], cwd=repo_dir, check=True, env=env)
         ic("Git add completed.")
-        subprocess.run(["git", "commit", "-m", f"Task {index} solved by LangChain Agents"], cwd=repo_dir, check=True, env=env)
-        ic("Git commit completed.")
+        # subprocess.run(["git", "commit", "-m", f"Task {index} solved by LangChain Agents"], cwd=repo_dir, check=True, env=env)
+        # ic("Git commit completed.")
     except subprocess.CalledProcessError as e:
         print(f"Git commit failed: {e}")
     
@@ -98,6 +98,7 @@ def handle_task(index):
         try:
             ic(res.status_code)
             ic(res.text)
+            logger.info(f"Test API response: {res.status_code} - {res.text}")
             res.raise_for_status()
         except requests.RequestException as e:
             logger.error(f"Error occurred while running tests: {e}")
@@ -130,7 +131,7 @@ def handle_task(index):
 if __name__ == "__main__":
     logger.info(f"Starting Multi LangChain Agents at {datetime.now().isoformat()}\n")
     
-    for i in range(1, 100, 5):
+    for i in range(30, 31):
         try:
             handle_task(i)
         except Exception as e:

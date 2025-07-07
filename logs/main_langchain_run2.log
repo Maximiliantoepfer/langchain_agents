@@ -1,0 +1,9 @@
+2025-07-07 07:06:42,915 - INFO - Starting Multi LangChain Agents at 2025-07-07T07:06:42.915371
+
+2025-07-07 07:06:42,915 - INFO - 
+___ TASK 30 ___
+2025-07-07 07:06:42,915 - INFO -  - Repository C:\Users\maxto\source\langchain_agents\repos\repo_30 - 
+2025-07-07 07:07:36,261 - INFO - Repository: C:\Users\maxto\source\langchain_agents\repos\repo_30, using 4774 length prompt
+2025-07-07 07:09:48,317 - ERROR - Error occurred while getting usage metrics: unsupported format string passed to method.__format__
+2025-07-07 07:18:14,274 - INFO - Test API response: 200 - {"exitCode":0}
+2025-07-07 07:18:14,275 - ERROR - An error occurred while handling task 30: No data in harnessOutput – possible evaluation error or empty result
