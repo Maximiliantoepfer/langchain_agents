@@ -30,7 +30,7 @@ class MultiLangChainAgents():
             description=(
                 "You are provided with a file-specific plan from the Planner."
                 " Based on this plan, make the necessary modifications in the codebase."
-                " You should read, edit, and write files using the repository tools. If a file must change, regenerate it fully with your changes."
+                " You should read, edit, and write files using the repository tools.  If a file must change, regenerate it fully with your changes."
                 " Never decide what files to touch — only follow the Planner's file list and plan."
             ),
             root_dir=self.repo_path,
@@ -51,7 +51,7 @@ class MultiLangChainAgents():
     def run(self, task: str, max_feedback: int = 5):
         self.logger.info(f"Starting run for task: {task}")
         
-        # Step 1: Initial planning
+        # Step 1: Initial plan
         plan = self.planner.run(task)
         self.logger.info("[PLANNER OUTPUT]")
         self.logger.info(plan)
@@ -63,7 +63,7 @@ class MultiLangChainAgents():
             feedback_round += 1
             self.logger.info(f"--- FEEDBACK ROUND {feedback_round} ---")
 
-            # Step 2: Coder implements plan
+            # Step 2: Coder implementation plan
             coder_response = self.coder.run(plan)
             self.logger.info("[CODER RESPONSE]")
             self.logger.info(coder_response)
