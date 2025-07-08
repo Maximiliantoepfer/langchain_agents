@@ -1,0 +1,30 @@
+2025-07-08 00:45:43,798 - INFO - Starting Multi LangChain Agents at 2025-07-08T00:45:43.798089
+
+2025-07-08 00:45:43,798 - INFO - 
+___ TASK 1 ___
+2025-07-08 00:45:43,798 - INFO -  - Repository C:\Users\maxto\source\langchain_agents\repos\repo_1 - 
+2025-07-08 00:48:26,788 - INFO - Starting Multi LangChain Agents at 2025-07-08T00:48:26.788877
+
+2025-07-08 00:48:26,788 - INFO - 
+___ TASK 1 ___
+2025-07-08 00:48:26,788 - INFO -  - Repository C:\Users\maxto\source\langchain_agents\repos\repo_1 - 
+2025-07-08 00:49:01,594 - INFO - Repository: C:\Users\maxto\source\langchain_agents\repos\repo_1, using 1246 length prompt
+2025-07-08 00:52:21,353 - INFO - Total Costs: $0.40
+2025-07-08 00:52:21,354 - INFO - Total Tokens: 201459
+2025-07-08 00:58:28,576 - INFO - Test API response: 200 - {"exitCode":0,"harnessOutput":"{\n    \"astropy__astropy-12907\": {\n        \"patch_is_None\": false,\n        \"patch_exists\": true,\n        \"patch_successfully_applied\": true,\n        \"resolved\": false,\n        \"tests_status\": {\n            \"FAIL_TO_PASS\": {\n                \"success\": [],\n                \"failure\": [\n                    \"astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]\",\n                    \"astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]\"\n                ]\n            },\n            \"PASS_TO_PASS\": {\n                \"success\": [\n                    \"astropy/modeling/tests/test_separable.py::test_coord_matrix\",\n                    \"astropy/modeling/tests/test_separable.py::test_cdot\",\n                    \"astropy/modeling/tests/test_separable.py::test_cstack\",\n                    \"astropy/modeling/tests/test_separable.py::test_arith_oper\",\n                    \"astropy/modeling/tests/test_separable.py::test_separable[compound_model0-result0]\",\n                    \"astropy/modeling/tests/test_separable.py::test_separable[compound_model1-result1]\",\n                    \"astropy/modeling/tests/test_separable.py::test_separable[compound_model2-result2]\",\n                    \"astropy/modeling/tests/test_separable.py::test_separable[compound_model3-result3]\",\n                    \"astropy/modeling/tests/test_separable.py::test_separable[compound_model4-result4]\",\n                    \"astropy/modeling/tests/test_separable.py::test_separable[compound_model5-result5]\",\n                    \"astropy/modeling/tests/test_separable.py::test_separable[compound_model7-result7]\",\n                    \"astropy/modeling/tests/test_separable.py::test_separable[compound_model8-result8]\",\n                    \"astropy/modeling/tests/test_separable.py::test_custom_model_separable\"\n                ],\n                \"failure\": []\n            },\n            \"FAIL_TO_FAIL\": {\n                \"success\": [],\n                \"failure\": []\n            },\n            \"PASS_TO_FAIL\": {\n                \"success\": [],\n                \"failure\": []\n            }\n        }\n    }\n}"}
+2025-07-08 00:58:28,578 - INFO - FAIL_TO_PASS passed: 0/2
+
+2025-07-08 00:58:28,578 - INFO - PASS_TO_PASS passed: 13/13
+
+2025-07-08 00:58:28,582 - INFO - 
+___ TASK 2 ___
+2025-07-08 00:58:28,582 - INFO -  - Repository C:\Users\maxto\source\langchain_agents\repos\repo_2 - 
+2025-07-08 00:59:21,633 - INFO - Repository: C:\Users\maxto\source\langchain_agents\repos\repo_2, using 1871 length prompt
+2025-07-08 01:07:27,969 - INFO - Total Costs: $0.75
+2025-07-08 01:07:27,969 - INFO - Total Tokens: 309617
+2025-07-08 01:12:22,074 - INFO - Test API response: 200 - {"exitCode":0}
+2025-07-08 01:12:22,075 - ERROR - An error occurred while handling task 2: No data in harnessOutput � possible evaluation error or empty result
+2025-07-08 01:12:22,078 - INFO - 
+___ TASK 3 ___
+2025-07-08 01:12:22,078 - INFO -  - Repository C:\Users\maxto\source\langchain_agents\repos\repo_3 - 
+2025-07-08 01:12:55,882 - INFO - Repository: C:\Users\maxto\source\langchain_agents\repos\repo_3, using 1339 length prompt

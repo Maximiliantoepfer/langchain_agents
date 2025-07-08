@@ -12,7 +12,7 @@ TEST_API_URL = "http://localhost:8084/test"  # API endpoint for SWE-Bench-Lite t
 
 REPOS_DIR = os.path.abspath("./repos") # Set this to the path of your repository if needed
 LOGS_DIR = os.path.abspath("./logs")  # Set this to the path of your logs if needed
-MAX_FEEDBACK = 5
+MAX_FEEDBACK = 8
 
 os.makedirs(REPOS_DIR, exist_ok=True)
 os.makedirs(LOGS_DIR, exist_ok=True)
@@ -131,7 +131,7 @@ def handle_task(index):
 if __name__ == "__main__":
     logger.info(f"Starting Multi LangChain Agents at {datetime.now().isoformat()}\n")
     
-    for i in range(30, 31):
+    for i in range(3, 31):
         try:
             handle_task(i)
         except Exception as e:
